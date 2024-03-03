@@ -1,0 +1,39 @@
+{
+  "name": "hapipal-boilerplate",
+  "version": "3.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "lab -a @hapi/code -L",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hapi/boom": "9.x.x",
+    "@hapi/hoek": "^11.0.4",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "@hapipal/haute-couture": "4.x.x",
+    "@hapipal/schmervice": "^3.0.0",
+    "bcrypt": "^5.1.1",
+    "hapi-swagger": "^17.2.1",
+    "joi": "17.x.x",
+    "marked": "^12.0.0",
+    "nodemailer": "^6.9.11"
+  },
+  "devDependencies": {
+    "@hapi/code": "8.x.x",
+    "@hapi/eslint-config-hapi": "13.x.x",
+    "@hapi/eslint-plugin-hapi": "4.x.x",
+    "@hapi/glue": "8.x.x",
+    "@hapi/hapi": "20.x.x",
+    "@hapi/lab": "24.x.x",
+    "@hapipal/confidence": "6.x.x",
+    "@hapipal/hpal": "3.x.x",
+    "@hapipal/hpal-debug": "2.x.x",
+    "@hapipal/toys": "3.x.x",
+    "babel-eslint": "10.x.x",
+    "dotenv": "8.x.x",
+    "eslint": "7.x.x",
+    "exiting": "6.x.x"
+  }
+}
