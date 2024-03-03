@@ -8,6 +8,8 @@ exports.deployment = async ({ start } = {}) => {
     const manifest = Manifest.get('/', process.env);
     const server = await Glue.compose(manifest, { relativeTo: __dirname });
 
+    console.log('Composition du serveur terminée. Démarrage du serveur...');
+
     if (start) {
         await Exiting.createManager(server).start();
         console.log(`Server started at ${server.info.uri}`);
