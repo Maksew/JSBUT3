@@ -1,19 +1,22 @@
-# Bibliothèque de Films - FilmLibrary
+# 🎬 Bibliothèque de Films - FilmLibrary
+
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Bienvenue sur le projet FilmLibrary, une application web permettant de gérer une bibliothèque de films et d'envoyer des notifications par e-mail. Conçue avec Node.js et Hapi.js, cette application offre une interface pour ajouter, modifier, supprimer et lister des films, ainsi que pour envoyer des e-mails automatisés lors de la création d'utilisateurs ou de la modification de films.
+> 🔍 **NOTE:** Le code principal est actuellement dans la branche `dev`. Veuillez changer de branche pour voir le code le plus récent. 👉 [Voir la branche dev](../../tree/dev)
 
-## Fonctionnalités
+Bienvenue sur le projet FilmLibrary 🎞️, une application web permettant de gérer une bibliothèque de films et d'envoyer des notifications par e-mail. Conçue avec Node.js et Hapi.js, cette application offre une interface pour ajouter, modifier, supprimer et lister des films, ainsi que pour envoyer des e-mails automatisés lors de la création d'utilisateurs ou de la modification de films.
 
-- **Gestion des Films** : Ajoutez, modifiez et supprimez des films dans votre bibliothèque.
-- **Notifications E-mail** : Envoyez des e-mails automatiques pour informer les utilisateurs des changements.
-- **Sécurité** : Utilisation de JWT pour authentifier et autoriser les utilisateurs.
-- **Validations** : Validation des entrées utilisateur avec Joi pour renforcer la sécurité.
+## Fonctionnalités 🌟
 
-## Configuration de l'Environnement
+- **Gestion des Films** 🎥 : Ajoutez, modifiez et supprimez des films dans votre bibliothèque.
+- **Notifications E-mail** 📧 : Envoyez des e-mails automatiques pour informer les utilisateurs des changements.
+- **Sécurité** 🔒 : Utilisation de JWT pour authentifier et autoriser les utilisateurs.
+- **Validations** ✔️ : Validation des entrées utilisateur avec Joi pour renforcer la sécurité.
+
+## Configuration de l'Environnement 🛠️
 
 Pour que l'application fonctionne correctement, vous devez définir les variables d'environnement suivantes :
 
@@ -29,7 +32,7 @@ EMAIL_PASSWORD=your-email-password
 JWT_SECRET=your-jwt-secret
 ```
 
-## Installation
+## Installation 💻
 
 Pour installer les dépendances, exécutez la commande suivante :
 
@@ -37,7 +40,7 @@ Pour installer les dépendances, exécutez la commande suivante :
 npm install
 ```
 
-## Démarrage de l'Application
+## Démarrage de l'Application 🚀
 
 Pour lancer le serveur, utilisez :
 
@@ -45,11 +48,11 @@ Pour lancer le serveur, utilisez :
 npm start
 ```
 
-## Guide d'Installation Détaillé
+## Guide d'Installation Détaillé 📚
 
 Après avoir cloné le dépôt et configuré les variables d'environnement comme décrit ci-dessus, suivez ces étapes pour configurer votre environnement de développement.
 
-### Configuration des Plugins
+### Configuration des Plugins 🔌
 
 Les plugins Hapi.js sont configurés dans le dossier `lib/plugins`. Chaque fichier correspond à un plugin spécifique. Par exemple :
 
@@ -58,7 +61,7 @@ Les plugins Hapi.js sont configurés dans le dossier `lib/plugins`. Chaque fichi
 
 Assurez-vous de configurer chaque plugin selon les besoins de votre environnement.
 
-## Exécution des Migrations
+## Exécution des Migrations 📈
 
 Pour créer et initialiser la base de données, exécutez :
 
@@ -66,11 +69,11 @@ Pour créer et initialiser la base de données, exécutez :
 npm run migrate
 ```
 
-### Gestion de la Base de Données
+### Gestion de la Base de Données 🗄️
 
 Le dossier `lib/migrations` contient les scripts de migration pour initialiser et mettre à jour les schémas de base de données. Veillez à exécuter les migrations avant de démarrer l'application.
 
-### Tests
+### Tests 🧪
 
 Le dossier `test` contient des tests pour chaque partie importante de l'application. Exécutez régulièrement les tests pour vous assurer que les modifications n'introduisent pas de régressions.
 
@@ -80,11 +83,11 @@ Pour exécuter les tests, lancez :
 npm test
 ```
 
-### Exemple de Requêtes API
+### Exemple de Requêtes API 📡
 
 Vous pouvez trouver des exemples de requêtes pour chaque route dans le dossier `lib/routes`. Pour tester l'API en développement, vous pouvez utiliser des outils comme Postman ou des requêtes `curl` directement depuis votre terminal.
 
-## Structure du Projet
+## Structure du Projet 📂
 
 Voici un aperçu de la structure de dossiers principale de l'application FilmLibrary :
 
@@ -106,17 +109,17 @@ iut-project/
 └── README.md              # Documentation du projet
 ```
 
-## Contribution
+## Contribution 🤝
 
 Si vous souhaitez contribuer au projet, veuillez suivre les étapes suivantes :
 
-1. Fork le projet.
-2. Créez une nouvelle branche pour chaque fonctionnalité ou correction.
-3. Soumettez une pull request avec une description détaillée de vos changements.
+1. Fork le projet 🍴. 
+2. Créez une nouvelle branche pour chaque fonctionnalité ou correction 🌿.
+3. Soumettez une pull request avec une description détaillée de vos changements 💬.
 
 N'oubliez pas d'ajouter des tests si vous introduisez de nouvelles fonctionnalités !
 
-## Questions et Support
+## Questions et Support 🆘
 
 Si vous avez des questions ou besoin d'aide pour utiliser l'application, n'hésitez pas à ouvrir une issue dans le dépôt GitHub du projet.
 
